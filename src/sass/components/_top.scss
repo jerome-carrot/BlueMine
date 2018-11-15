@@ -189,8 +189,6 @@
 
   > form > input,
   > select {
-    border-color: $quick-search-border;
-
     &:focus {
       border-color: $quick-search-border-focus;
     }
@@ -204,6 +202,10 @@
       color: $gray-lighter;
     }
   }
+
+  label {
+    color: $header-bg; // hide colon on search label
+  }
 }
 
 #project-jump {
@@ -214,7 +216,6 @@
       z-index: 1003;
       height: auto;
       padding-bottom: $header-padding-horizontal / 2;
-      border-color: $quick-search-dropdown-bg;
       background-color: $quick-search-dropdown-bg;
     }
   }
@@ -222,7 +223,6 @@
   .drdn {
     &-trigger {
       min-width: $quick-search-width;
-      border-color: $quick-search-border;
     }
 
     &-content {

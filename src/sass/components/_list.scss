@@ -6,6 +6,7 @@ table.list {
   width: 100%;
   margin-bottom: $line-height-computed;
   font-size: $font-size-list;
+  text-align: left;
 
   .autoscroll & {
     margin-bottom: 0;
@@ -17,7 +18,7 @@ table.list {
 
   th,
   .table-list-header {
-    padding: $table-cell-padding;
+    padding: $table-cell-padding-wide;
     border: 2px solid $table-border-color;
     border-width: $table-list-header-border;
     color: $gray;
@@ -25,6 +26,10 @@ table.list {
 
     a {
       color: $gray-darker;
+    }
+
+    &.checkbox {
+      padding: $table-cell-padding;
     }
   }
 
@@ -39,10 +44,10 @@ table.list {
   }
 
   td {
-    padding: $table-cell-padding;
+    padding: $table-cell-padding-wide;
     border: 1px solid $table-border-color;
     border-width: $table-list-item-border;
-    text-align: center;
+    text-align: left;
     vertical-align: top;
 
     @if $use-font-awesome {
@@ -53,7 +58,7 @@ table.list {
 
     &.checkbox {
       width: 15px;
-      padding: $table-cell-padding 0 0;
+      padding: $table-cell-padding 0 0 $table-cell-padding;
 
       input {
         margin: 2px 0 0;
@@ -191,17 +196,6 @@ tr.issue {
     padding-left: 10px;
     background-repeat: no-repeat;
     background-position: -5px 0;
-  }
-
-  .controller-issues.action-index & {
-    &.assigned-to-me {
-      .assigned_to,
-      .subject {
-        a {
-          font-weight: $font-weight-bold;
-        }
-      }
-    }
   }
 
   @for $i from 1 through 9 {
@@ -428,8 +422,12 @@ tr.group {
     display: inline;
   }
 
+  .name {
+    font-size: 1.1em;
+  }
+
   .count {
-    display: inline-block;
+    display: none;
     min-width: 1em;
     margin: 0 5px;
     padding: 1px 4px;

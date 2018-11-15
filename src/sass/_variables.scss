@@ -9,11 +9,11 @@
 $fixed-layout:                  false !default;
 $flexbox-layout:                true !default;
 $sidebar-position:              left !default;
-$color-priorities:              true !default;
+$color-priorities:              false !default;
 $color-trackers:                true !default;
-$colored-issue:                 true !default;
+$colored-issue:                 false !default;
 $color-status:                  true !default;
-$use-gravatars:                 true !default;
+$use-gravatars:                 false !default;
 $use-font-awesome:              true !default;
 $use-logo:                      false !default;
 $use-retina-logo:               false !default;
@@ -36,14 +36,14 @@ $gray-light:                    lighten($gray-base, 17%) !default;
 $gray-lighter:                  lighten($gray-base, 35%) !default;
 $gray-lightest:                 lighten($gray-base, 46%) !default;
 
-$brand-primary:                 #584492 !default;
+$brand-primary:                 #00539c !default;
 $brand-text:                    #fff !default;
 $brand-accent:                  #deddef !default;
 
-$brand-success:                 #019851 !default;
-$brand-info:                    #409ae3 !default;
-$brand-warning:                 #ed820c !default;
-$brand-danger:                  #e74c3c !default;
+$brand-success:                 #008352 !default;
+$brand-info:                    $brand-primary;
+$brand-warning:                 #c29400 !default;
+$brand-danger:                  #c23c00 !default;
 
 $state-success:                 #b5fbb7 !default;
 $state-info:                    #97cefb !default;
@@ -57,7 +57,7 @@ $state-danger:                  #f7a6a4 !default;
 $body-bg:                       #fff !default;
 $text-color:                    $gray-dark !default;
 
-$link-color:                    #4183c4 !default;
+$link-color:                    $brand-primary;
 $link-hover-color:              darken($link-color, 10%) !default;
 $link-hover-decoration:         underline !default;
 $link-closed-decoration:        line-through !default;
@@ -123,6 +123,7 @@ $padding-small-vertical:        5px !default;
 $padding-small-horizontal:      10px !default;
 
 $padding-side:                  20px !default;
+$padding-bottom:                60px !default;
 $padding-wiki:                  20px !default;
 
 $border-radius-base:            3px !default;
@@ -151,6 +152,7 @@ $collapsible-max-height:        10000px !default;
 //
 
 $table-cell-padding:            8px !default;
+$table-cell-padding-wide:       8px 16px !default;
 $table-condensed-cell-padding:  5px !default;
 
 $table-list-header-border:      0 0 2px !default;
@@ -349,7 +351,7 @@ $header-bg:                     $brand-primary !default;
 $header-text:                   $brand-text !default;
 $header-link:                   $brand-text !default;
 $header-root:                   $brand-accent !default;
-$header-padding-vertical:       10px !default;
+$header-padding-vertical:       15px !default;
 $header-padding-horizontal:     $padding-side !default;
 $header-title-size:             $font-size-h3 !default;
 $header-title-line-height:      $line-height-computed * 1.5 !default;
@@ -444,18 +446,18 @@ $sidebar-link-active-text:      $gray-darkest !default;
 //== Flash messages (alerts)
 //
 
-$flash-success-bg:              #5cb85c !default;
-$flash-success-border:          darken($flash-success-bg, 5%) !default;
+$flash-success-bg:              #008352 !default;
+$flash-success-border:          $flash-success-bg;
 $flash-success-text:            #fff !default;
 $flash-success-link:            #fff !default;
 
-$flash-warning-bg:              #fde3a7 !default;
-$flash-warning-border:          darken($flash-warning-bg, 15%) !default;
-$flash-warning-text:            #b45e10 !default;
-$flash-warning-link:            #a0540e !default;
+$flash-warning-bg:              #c29400 !default;
+$flash-warning-border:          $flash-warning-bg;
+$flash-warning-text:            #fff !default;
+$flash-warning-link:            #fff !default;
 
-$flash-error-bg:                #d9534f !default;
-$flash-error-border:            darken($flash-error-bg, 5%) !default;
+$flash-error-bg:                #c23c00 !default;
+$flash-error-border:            $flash-error-bg;
 $flash-error-text:              #fff !default;
 $flash-error-link:              #fff !default;
 

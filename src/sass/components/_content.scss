@@ -12,7 +12,7 @@
 // --------------------------------------------------
 
 #content {
-  padding: $padding-side;
+  padding: $padding-side $padding-side $padding-bottom $padding-side;
 
   @if $flexbox-layout {
     $side-space: $sidebar-width + $padding-side * 2;

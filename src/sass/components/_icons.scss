@@ -79,7 +79,7 @@ $icon-danger-hover-color:            darken($brand-danger, 10%);
 @if $use-font-awesome {
   .icon {
     @extend %fa-icon;
-    padding-left: 20px;
+    padding-left: 30px;
     background-repeat: no-repeat;
     background-position: 0% 50%;
 
@@ -323,8 +323,6 @@ $icon-danger-hover-color:            darken($brand-danger, 10%);
 //
 
 .icon-add,
-.icon-edit,
-.icon-save,
 .icon-checked {
   @include link-variant($icon-success-color, $icon-success-hover-color);
 }

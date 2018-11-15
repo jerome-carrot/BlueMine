@@ -50,15 +50,11 @@
         margin-right: 5px;
       }
 
-      > .subject,
-      > .author {
-        padding-left: $issue-gravatar-size * 1.1 + 10px;
-      }
-    }
-
-    &.assigned-to-me {
-      .assigned-to .user {
-        font-weight: $font-weight-bold;
+      @if $use-gravatars {
+        > .subject,
+        > .author {
+          padding-left: $issue-gravatar-size * 1.1 + 10px;
+        }
       }
     }
 

@@ -1,6 +1,6 @@
 @if $enable-sidebar-toggler {
-  $toggler-position-v:          1px;
-  $toggler-position-h:          1px;
+  $toggler-position-v:          2px;
+  $toggler-position-h:          2px;
 
   #main {
     position: relative;
@@ -44,7 +44,7 @@
 
     @if $use-font-awesome {
       @extend %fa-icon;
-      color: $gray-light;
+      color: lighten($gray-base, 21%);
       line-height: 1;
 
       &::before {
